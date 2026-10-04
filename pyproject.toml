@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dji-cinematic-segment-cutter"
+version = "0.1.0"
+description = "Find smooth segments in DJI drone videos using embedded telemetry"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "hardik-id" }]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/hardik-id/dji-cinematic-segment-cutter"
+Issues = "https://github.com/hardik-id/dji-cinematic-segment-cutter/issues"
+
+[project.scripts]
+dji-cinematic-segment-cutter = "drone_smoothness:main"
+
+[tool.setuptools]
+py-modules = ["drone_smoothness"]
